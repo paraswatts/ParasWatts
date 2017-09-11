@@ -13,13 +13,10 @@ import {
 } from 'react-native';
 
 export default class Tab2Page1 extends Component {
-  static navigationOptions = {
-    title: 'Tab2Page1',
-  };
 
-    static navigationOptions = {
-        title: 'Tab4Page1',
-      };
+  static navigationOptions = {
+    header:null
+  };
   render() {
     return (
       <View style={styles.container}>
@@ -27,9 +24,9 @@ export default class Tab2Page1 extends Component {
           Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit index.android.js
+          Tab2Page1
         </Text>
-        <Text style={styles.instructions}>
+        <Text style={styles.welcome}>
           Double tap R on your keyboard to reload,{'\n'}
           Shake or press menu button for dev menu
         </Text>
@@ -51,6 +48,8 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   instructions: {
+    
+    fontSize:25,
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5,

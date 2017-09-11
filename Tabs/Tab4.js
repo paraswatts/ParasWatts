@@ -32,13 +32,8 @@ class Tab4 extends Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity
-          style={{
-            width: width-20,
-          alignItems:'center',
-          margin:10,
-          borderWidth:1,
-          height: 50
-        }}
+        style={styles.button}
+        
         onPress={ () => navigate('Tab4Page1')}
         >
           <Text>
@@ -48,13 +43,8 @@ class Tab4 extends Component {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={{
-            width: width-20,
-          alignItems:'center',
-          margin:10,
-          borderWidth:1,
-          height: 50
-        }} 
+        style={styles.button}
+        
         onPress={ () => navigate('Tab4Page2')}
         >
           <Text>
@@ -64,13 +54,8 @@ class Tab4 extends Component {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={{
-            width: width-20,
-          alignItems:'center',
-          margin:10,
-          borderWidth:1,
-          height: 50
-        }}
+        style={styles.button}
+        
         onPress={ () => navigate('Tab4Page3')}
         >
           <Text>
@@ -80,13 +65,8 @@ class Tab4 extends Component {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={{
-          width: width-20,
-          alignItems:'center',
-          margin:10,
-          borderWidth:1,
-          height: 50
-        }}
+        style={styles.button}
+        
         onPress={ () => navigate('Tab4Page4')}
         >
           <Text>
@@ -102,7 +82,8 @@ class Tab4 extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  
+    alignItems:'center',
+    justifyContent:'center',
     backgroundColor: '#F5FCFF'
   },
   welcome: {
@@ -114,6 +95,14 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5
+  },
+  button:{
+    width: width-20,
+    alignItems:'center',
+    margin:10,
+    borderWidth:1,
+    justifyContent:'center',
+    height: 50
   }
 });
 const Tab4Pages = StackNavigator({

@@ -29,13 +29,7 @@ class Tab1 extends Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity
-          style={{
-            width: width-20,
-          alignItems:'center',
-          margin:10,
-          borderWidth:1,
-          height: 50
-        }}
+        style={styles.button}
         onPress={ () => navigate('Tab1Page1')}
         >
           <Text>
@@ -45,13 +39,7 @@ class Tab1 extends Component {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={{
-            width: width-20,
-          alignItems:'center',
-          margin:10,
-          borderWidth:1,
-          height: 50
-        }}
+        style={styles.button}
         onPress={ () => navigate('Tab1Page2')}
          >
           <Text>
@@ -61,13 +49,7 @@ class Tab1 extends Component {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={{
-            width: width-20,
-          alignItems:'center',
-          margin:10,
-          borderWidth:1,
-          height: 50
-        }} 
+        style={styles.button}
         onPress={ () => navigate('Tab1Page3')}
         >
           <Text>
@@ -77,13 +59,7 @@ class Tab1 extends Component {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={{
-          width: width-20,
-          alignItems:'center',
-          margin:10,
-          borderWidth:1,
-          height: 50
-        }}
+          style={styles.button}
         onPress={ () => navigate('Tab1Page4')}
         >
           <Text>
@@ -99,7 +75,8 @@ class Tab1 extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-  
+    alignItems:'center',
+    justifyContent:'center',
     backgroundColor: '#F5FCFF'
   },
   welcome: {
@@ -111,6 +88,14 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5
+  },
+  button:{
+    width: width-20,
+    alignItems:'center',
+    margin:10,
+    borderWidth:1,
+    justifyContent:'center',
+    height: 50
   }
 });
 

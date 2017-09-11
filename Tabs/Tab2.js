@@ -30,13 +30,7 @@ class Tab2 extends Component {
     return (
       <View style={styles.container}>
         <TouchableOpacity
-          style={{
-            width: width-20,
-          alignItems:'center',
-          margin:10,
-          borderWidth:1,
-          height: 50
-        }}
+          style={styles.button}
         onPress={ () => navigate('Tab2Page1')}
         >
           <Text>
@@ -46,13 +40,7 @@ class Tab2 extends Component {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={{
-            width: width-20,
-          alignItems:'center',
-          margin:10,
-          borderWidth:1,
-          height: 50
-        }}
+          style={styles.button}
         onPress={ () => navigate('Tab2Page2')}
         >
           <Text>
@@ -62,13 +50,7 @@ class Tab2 extends Component {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={{
-            width: width-20,
-          alignItems:'center',
-          margin:10,
-          borderWidth:1,
-          height: 50
-        }}
+          style={styles.button}
         onPress={ () => navigate('Tab2Page3')}
         >
           <Text>
@@ -78,13 +60,9 @@ class Tab2 extends Component {
         </TouchableOpacity>
 
         <TouchableOpacity
-          style={{
-          width: width-20,
-          alignItems:'center',
-          margin:10,
-          borderWidth:1,
-          height: 50
-        }}
+          style={
+          styles.button
+        }
         onPress={ () => navigate('Tab2Page4')}
         >
           <Text>
@@ -112,7 +90,16 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     color: '#333333',
     marginBottom: 5
+  },
+  button:{
+    width: width-20,
+    alignItems:'center',
+    margin:10,
+    borderWidth:1,
+    justifyContent:'center',
+    height: 50
   }
+
 });
 const Tab2Pages = StackNavigator({
   Tab2:{screen:Tab2},
